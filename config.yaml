@@ -1,0 +1,20 @@
+---
+name: Music Player Daemon
+description: Music Player Daemon server-side application for playing music
+version: 1.1.4
+slug: mpd_server
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
+audio: true
+host_network: true
+ports:
+  6600/tcp: 6600
+  8000/tcp: 8000
+ports_description:
+  6600/tcp: MPd's TCP port.
+  8000/tcp: httpd output (built-in HTTP streaming server)
